@@ -1,5 +1,5 @@
-# gb_walkie_talkie
-##An open source "Fake" walkie-talkie for Fake Ghost Tours made by my friends in Vancouver.
+# Ghost Bros Walkie-Talkie
+## An open source "Fake" walkie-talkie for Fake Ghost Tours made by my friends in Vancouver.
 
 When I say "Fake" walkie-talkie, what I mean is that this walkie-talkie does not do two way commincation. It actually doesn't even do one way communication(if you don't count the gps). 
 This walkie-talkie was designed for my friends at Fake Ghost Tours [FakeGhostTours.com](http://fakeghosttours.com) - real friends not fake friends.
