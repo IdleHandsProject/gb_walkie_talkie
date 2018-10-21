@@ -68,7 +68,7 @@ int sum = 0;
 
 #define PIN 1
 
-int volume = 50;
+int volume = 30;
 
 // These are the pins used for the Audio
 #define VS1053_RESET   -1     // VS1053 reset pin (not used!)
