@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>\\HODGINSA-LAPTOP\Users\hodginsa\Documents\idlehandsdev\walkietalkie_ghostbros\PCB\gb_walkie.sch</source>
-    <date>10/10/2018 3:36:40 PM</date>
+    <source>N:\idlehandsdev\Projects\gb_walkie_talkie\PCB\gb_walkie.sch</source>
+    <date>10/21/2018 9:26:15 AM</date>
     <tool>Eeschema (5.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -62,6 +62,9 @@
     <comp ref="SW2">
       <value>SW_Push</value>
       <footprint>Button_Switch_THT:SW_PUSH_6mm_H13mm</footprint>
+      <fields>
+        <field name="Digikey Part No.">679-2432-ND</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BAA5E6A</tstamp>
@@ -69,6 +72,9 @@
     <comp ref="SW3">
       <value>SW_Push</value>
       <footprint>Button_Switch_THT:SW_PUSH_6mm_H13mm</footprint>
+      <fields>
+        <field name="Digikey Part No.">679-2432-ND</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BAA5F9C</tstamp>
@@ -448,6 +454,9 @@
       <value>Speaker</value>
       <footprint>TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey Part No.">GF0666M-ND</field>
+      </fields>
       <libsource lib="Device" part="Speaker" description="speaker"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BCCFD15</tstamp>
@@ -509,7 +518,7 @@
     <comp ref="U4">
       <value>FGPMM0PA6H</value>
       <footprint>project_footprints:FGPMMOPA6H</footprint>
-      <libsource lib="FGPMM0PA6H_GPS" part="FGPMM0PA6H" description=""/>
+      <libsource lib="" part="FGPMM0PA6H" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BDE000B</tstamp>
     </comp>
@@ -589,7 +598,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Digikey Part No.">311-1729-1-ND</field>
+        <field name="Digikey Part No.">1276-6456-1-ND</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -686,7 +695,7 @@
       <footprint>Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Digikey Part No.">445-2164-1-ND</field>
+        <field name="Digikey Part No.">3314J-103ECT-ND</field>
       </fields>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
       <sheetpath names="/" tstamps="/"/>
@@ -760,6 +769,34 @@
     </comp>
   </components>
   <libparts>
+    <libpart lib="" part="FGPMM0PA6H_GPS:FGPMM0PA6H">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FGPMM0PA6H_GPS:FGPMM0PA6H</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="input"/>
+        <pin num="2" name="NRESET" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="VBACKUP" type="input"/>
+        <pin num="5" name="3D-FIX" type="output"/>
+        <pin num="6" name="NC" type="NotConnected"/>
+        <pin num="7" name="NC" type="NotConnected"/>
+        <pin num="8" name="GND" type="input"/>
+        <pin num="9" name="TX" type="output"/>
+        <pin num="10" name="RX" type="input"/>
+        <pin num="11" name="EX_ANT" type="input"/>
+        <pin num="12" name="GND" type="input"/>
+        <pin num="13" name="1PPS" type="input"/>
+        <pin num="14" name="RTCM" type="input"/>
+        <pin num="15" name="NC" type="NotConnected"/>
+        <pin num="16" name="NC" type="NotConnected"/>
+        <pin num="17" name="NC" type="NotConnected"/>
+        <pin num="18" name="NC" type="NotConnected"/>
+        <pin num="19" name="GND" type="input"/>
+        <pin num="20" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
     <libpart lib="Amplifier_Audio" part="PAM8302AAD">
       <aliases>
         <alias>PAM8302AAS</alias>
@@ -1070,34 +1107,6 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="FGPMM0PA6H_GPS" part="FGPMM0PA6H">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">FGPMM0PA6H</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VCC" type="input"/>
-        <pin num="2" name="NRESET" type="input"/>
-        <pin num="3" name="GND" type="input"/>
-        <pin num="4" name="VBACKUP" type="input"/>
-        <pin num="5" name="3D-FIX" type="output"/>
-        <pin num="6" name="NC" type="NotConnected"/>
-        <pin num="7" name="NC" type="NotConnected"/>
-        <pin num="8" name="GND" type="input"/>
-        <pin num="9" name="TX" type="output"/>
-        <pin num="10" name="RX" type="input"/>
-        <pin num="11" name="EX_ANT" type="input"/>
-        <pin num="12" name="GND" type="input"/>
-        <pin num="13" name="1PPS" type="input"/>
-        <pin num="14" name="RTCM" type="input"/>
-        <pin num="15" name="NC" type="NotConnected"/>
-        <pin num="16" name="NC" type="NotConnected"/>
-        <pin num="17" name="NC" type="NotConnected"/>
-        <pin num="18" name="NC" type="NotConnected"/>
-        <pin num="19" name="GND" type="input"/>
-        <pin num="20" name="NC" type="NotConnected"/>
-      </pins>
-    </libpart>
     <libpart lib="Jumper" part="SolderJumper_3_Open">
       <description>Solder Jumper, 3-pole, open</description>
       <docs>~</docs>
@@ -1237,16 +1246,13 @@
       <uri>F:\KiCad\share\kicad\library/Amplifier_Audio.lib</uri>
     </library>
     <library logical="CODECODER-VS1053B_LQFP48_">
-      <uri>\\HODGINSA-LAPTOP\Users\hodginsa\Documents\idlehandsdev\walkietalkie_ghostbros\PCB/project_libs/CODECODER-VS1053B_LQFP48_.lib</uri>
+      <uri>N:\idlehandsdev\Projects\gb_walkie_talkie\PCB/project_libs/CODECODER-VS1053B_LQFP48_.lib</uri>
     </library>
     <library logical="Connector">
       <uri>F:\KiCad\share\kicad\library/Connector.lib</uri>
     </library>
     <library logical="Device">
       <uri>F:\KiCad\share\kicad\library/Device.lib</uri>
-    </library>
-    <library logical="FGPMM0PA6H_GPS">
-      <uri>//HODGINSA-LAPTOP/Users/hodginsa/Documents/idlehandsdev/walkietalkie_ghostbros/PCB/project_libs/FGPMM0PA6H_GPS.lib</uri>
     </library>
     <library logical="Jumper">
       <uri>F:\KiCad\share\kicad\library/Jumper.lib</uri>
@@ -1258,7 +1264,7 @@
       <uri>F:\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="samd_hcc_mod">
-      <uri>\\HODGINSA-LAPTOP\Users\hodginsa\Documents\idlehandsdev\walkietalkie_ghostbros\PCB/project_libs/samd_hcc_mod.lib</uri>
+      <uri>N:\idlehandsdev\Projects\gb_walkie_talkie\PCB/project_libs/samd_hcc_mod.lib</uri>
     </library>
   </libraries>
   <nets>
